@@ -1,17 +1,17 @@
-const NFTs =[];
-function mintNFT(name, entryTime,exitTime,idCardType,visitorType) {
-   const NFT={
+const NFTs =[];                                                             //variable that hold NFT's
+function mintNFT(name, entryTime,exitTime,idCardType,visitorType) {         //mintNFT function for object
+   const NFT={                                                              //object that will hold the metadata for NFTs
          "Name":name,
          "Entry_time":entryTime,
          "Exit_Time":exitTime,
          "Id_Card_Type":idCardType,
          "Visitor_Type":visitorType
    }
-   NFTs.push(NFT);
+   NFTs.push(NFT);                                                          //storing NFT in the variable NFTs 
    console.log("Minted:" + name);
 }
 
-function listNFTs () {
+function listNFTs () {                                                      //function that will print all of NFTs metadata 
  for(let j=0; j < NFTs.length; j++)
    {
       console.log("\nID: \t\t\t"+ (j+1));
@@ -23,7 +23,7 @@ function listNFTs () {
    }
 }
 
-function getTotalSupply() {
+function getTotalSupply() {                                                  //function that return the number of NFT's created
 console.log("\n" + NFTs.length);
 }
 
