@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract MyToken {
+
+    string public tokenName = "MetaCrafter";                             //public variables that store the details about your coin 
+    string public tokenAbbrv = "M.Crft";     
+    uint public totalSupply = 10;
+    
+    
+    mapping(address => uint) public money;                              //mapping of addresses to balances
+    
+  
+    function mint(address _address, uint _value) public {
+        totalSupply += _value;                                          //increases the total supply by that number
+        money[_address] += _value;                                      //increases the balance of the “sender”
+    }
+
+  
+    function burn(address _address, uint _value) public{ 
+        require(money[_address] >= _value, "Insufficient balance");      // destroy tokens
+        totalSupply -= _value;
+        money[_address] -= _value;
+    }
+}
