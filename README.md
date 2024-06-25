@@ -1,7 +1,22 @@
-MyToken Smart Contract:
+
+# MyToken Smart Contract
 
 
-This repository contains the Solidity code for the MyToken smart contract, a simple token implementation on blockchain.
+This repository contains the Solidity code for the MyToken smart contract, a simple token implementation on the Ethereum blockchain. The contract allows for minting and burning tokens while keeping track of the total supply and individual balances.
+
+
+## Description
+
+MyToken is a Solidity-based smart contract that implements a basic fungible token on the Ethereum blockchain. It allows for the minting and burning of tokens, enabling users to increase or decrease the total supply. Each address has a balance tracked by the contract, providing a simple and efficient way to manage token distribution.
+
+## Getting Started
+
+### Installing
+
+To run these program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+
+
+### Executing program
 
 Contract Details:
 
@@ -55,11 +70,9 @@ Example Usage
         // Burning tokens
         burn(0x1234..., 20);
 
+## Authors
 
-Executing program:
-
-
-To run these program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
+ex. dikshajangra 
 
 
  
