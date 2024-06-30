@@ -56,8 +56,9 @@ For common issues or errors, refer to the following:
 ## Authors
 Contributors names and contact info:
 
-Diksha
-DIKSHA92003@GMAIL.COM
+Name: Diksha
+
+Email: DIKSHA92003@GMAIL.COM
 
 
 
